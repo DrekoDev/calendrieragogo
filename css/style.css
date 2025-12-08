@@ -123,18 +123,23 @@ header {
     color: var(--primary-color);
 }
 
-.btn-cta {
+.nav-links a.btn-cta {
     background-color: var(--primary-color);
     color: white;
     padding: 0.75rem 1.5rem;
     border-radius: var(--radius-md);
     font-weight: 600;
     box-shadow: var(--shadow-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
 }
 
-.btn-cta:hover {
+.nav-links a.btn-cta:hover {
     background-color: var(--primary-dark);
     transform: translateY(-2px);
+    color: white;
 }
 
 /* Hero Section */
