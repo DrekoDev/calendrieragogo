@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demande de Devis - Calendrier à GoGo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Sendcloud API -->
+    <script src="https://embed.sendcloud.sc/spp/1.0.0/api.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container navbar">
+            <a href="index.html" class="logo">
+                <img src="images/logo2022bleu.png" alt="Calendrier à GoGo Logo">
+            </a>
+            <div class="hamburger">
+                <i class="fas fa-bars fa-lg"></i>
+            </div>
+            <nav class="nav-links">
+                <a href="index.html">Accueil</a>
+                <a href="sousmainasso.html">Association</a>
+                <a href="bancairesouple.html">Entreprise</a>
+                <a href="calendrier12pages.html">École</a>
+                <a href="devis.html" class="active btn-cta">Demander un Devis</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="hero" style="height: 40vh; min-height: 300px; background-image: url('images/bannieresite.jpg');">
+        <div class="container hero-content">
+            <h1>Demande de Devis</h1>
+            <p>Recevez une offre personnalisée pour vos calendriers</p>
+        </div>
+    </section>
+
+    <!-- Devis Content -->
+    <section class="devis-container">
+
+        <!-- Point Relais Selection -->
+        <div class="point-relais-section">
+            <h2 style="margin-bottom: 1rem;"><i class="fas fa-truck"></i> Mode de Livraison</h2>
+            <p style="margin-bottom: 1.5rem; color: var(--text-light);">Pour faciliter la livraison de vos calendriers,
+                veuillez choisir le point relais le plus proche de chez vous.</p>
+
+            <button type="button" id="btn-select-relay" class="btn-select-relay">
+                <i class="fas fa-map-marker-alt"></i> Choisir un Point Relais
+            </button>
+
+            <div id="resultat-visuel" class="relay-result">
+                <span
+                    style="font-size: 0.9em; text-transform: uppercase; font-weight: bold; display: block; margin-bottom: 5px;">Livraison
+                    au point relais :</span>
+                <strong id="span-nom" style="font-size:1.2em; display:block; margin-bottom:0.2rem;"></strong>
+                <span id="span-adresse"></span>
+            </div>
+
+            <!-- Hidden Inputs for Form (if needed later) -->
+            <input type="hidden" name="relais_id" id="input_relais_id">
+            <input type="hidden" name="relais_nom" id="input_relais_nom">
+            <input type="hidden" name="relais_adresse" id="input_relais_adresse">
+            <input type="hidden" name="relais_carrier" id="input_relais_carrier">
+        </div>
+
+        <!-- Google Form -->
+        <div class="form-section">
+            <h2 style="margin-bottom: 1rem;">Votre Demande</h2>
+            <div style="position: relative; padding-bottom: 150%; height: 0; overflow: hidden; max-width: 100%;">
+                <iframe
+                    src="https://docs.google.com/forms/d/e/1FAIpQLScKu81fv2jDXz1JiZuSCPHrLylN2naT7KAm977xFChdh_7kJQ/viewform?embedded=true"
+                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" allowfullscreen>
+                    Chargement…
+                </iframe>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="quisommesnous.html">Qui sommes nous</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="devis.html">Demande de devis</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Nos Produits</h4>
+                    <ul>
+                        <li><a href="sousmainasso.html">Pour Associations</a></li>
+                        <li><a href="bancairesouple.html">Pour Entreprises</a></li>
+                        <li><a href="calendrier12pages.html">Pour Écoles</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <p>Calendrier à GoGo</p>
+                    <p>Tel : 06 50 83 43 04</p>
+                    <p>Email : calendrieragogo@sfr.fr</p>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2025 Calendrier à GoGo. Tous droits réservés.
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

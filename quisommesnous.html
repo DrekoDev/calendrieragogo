@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendrier à GoGo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container navbar">
+            <a href="index.html" class="logo">
+                <img src="images/logo2022bleu.png" alt="Calendrier à GoGo Logo">
+            </a>
+            <div class="hamburger">
+                <i class="fas fa-bars fa-lg"></i>
+            </div>
+            <nav class="nav-links">
+                <a href="index.html">Accueil</a>
+                <a href="#">Association</a>
+                <a href="#">Entreprise</a>
+                <a href="#">École</a>
+                <a href="devis.html" class="btn-cta">Demander un Devis</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="hero" style="height: 30vh; min-height: 250px; background-image: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.7)), url('images/bannieresite.jpg');">
+        <div class="container hero-content">
+            <h1>Calendrier à GoGo</h1>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="container" style="padding: 4rem 0;">
+        				
+				<div class="row">
+					<div class="span5">					
+						<h4 class="title"><span class="text"><strong>La</strong> Société</span></h4>
+						
+							
+							<fieldset>
+								<h4><span>Calendrier à GoGo est une entreprise du Pays de Bray en Seine Maritime (Normandie) prés de Rouen.</span></h4>
+								<h4><span>Depuis 2014, nous réalisons des calendriers pour des associations sportives, des écoles, et  des entreprises.</span></h4>
+								<h4><span>Notre engagement : réaliser un calendrier sur mesure moins cher que les calendriers automatiques sur internet, mais surtout que vous soyez satisfait de votre calendrier unique.</span></h4>
+								<h4><span>Président d’association moi-même, je suis pleinement conscient de vos attentes.</span></h4>
+								<h4><span>N’hésitez pas à nous contacter pour nous demander un devis sans engagement. </span></h4>
+								
+							</fieldset>
+									
+					</div>
+					<div class="span7">					
+						<h4 class="title"><span class="text"><strong>Notre</strong> engagement</span></h4>
+						
+							<fieldset>
+								<h4><span>Etre à votre écoute tout au long de votre projet.</span></h4>
+								<h4><span>Vous proposer des calendriers sur mesure moins cher que les calendriers automatiques sur internet. </span></h4>
+								<h4><span>Et surtout, nous apportons une attention toute particulière à la qualité de nos calendriers. </span></h4>
+														                            
+								
+								
+								
+							</fieldset>
+										
+					</div>				
+				</div>
+			
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="quisommesnous.html">Qui sommes nous</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="devis.html">Demande de devis</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Nos Produits</h4>
+                    <ul>
+                        <li><a href="sousmainasso.html">Pour Associations</a></li>
+                        <li><a href="bancairesouple.html">Pour Entreprises</a></li>
+                        <li><a href="calendrier12pages.html">Pour Écoles</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <p>Calendrier à GoGo</p>
+                    <p>Tel : 06 50 83 43 04</p>
+                    <p>Email : calendrieragogo@sfr.fr</p>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2025 Calendrier à GoGo. Tous droits réservés.
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Simple Tab Script for migrated content
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabs = document.querySelectorAll('.nav-tabs a');
+            tabs.forEach(tab => {
+                tab.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    // Remove active class from all tabs and panes
+                    document.querySelectorAll('.nav-tabs li').forEach(li => li.classList.remove('active'));
+                    document.querySelectorAll('.tab-pane').forEach(pane => pane.classList.remove('active'));
+                    
+                    // Add active class to clicked tab and target pane
+                    this.parentElement.classList.add('active');
+                    const targetId = this.getAttribute('href').substring(1);
+                    document.getElementById(targetId).classList.add('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>

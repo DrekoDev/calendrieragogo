@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendrier à GoGo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container navbar">
+            <a href="index.html" class="logo">
+                <img src="images/logo2022bleu.png" alt="Calendrier à GoGo Logo">
+            </a>
+            <div class="hamburger">
+                <i class="fas fa-bars fa-lg"></i>
+            </div>
+            <nav class="nav-links">
+                <a href="index.html">Accueil</a>
+                <a href="#">Association</a>
+                <a href="#">Entreprise</a>
+                <a href="#">École</a>
+                <a href="devis.html" class="btn-cta">Demander un Devis</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="hero" style="height: 30vh; min-height: 250px; background-image: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.7)), url('images/bannieresite.jpg');">
+        <div class="container hero-content">
+            <h1>Calendrier à GoGo</h1>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="container" style="padding: 4rem 0;">
+        				
+				<div class="row">
+					<div class="span5">					
+						<h4 class="title"><span class="text"><strong>Mode</strong> d'emploi</span></h4>
+						
+							
+							<fieldset>
+								<h4><span>Prenez contact avec nous soit par teléphone au : </span></h4>
+								<h4><span>02 35 34 82 99 ou 06 50 83 43 04 </span></h4>
+								<h4><span>Soit par Mail :  </span></h4>
+								<h4><span><a href="mailto:calendrieragogo@sfr.fr">calendrieragogo@sfr.fr</a></span></h4>
+								
+								
+								
+							</fieldset>
+									
+					</div>
+					<div class="span7">					
+						<h4 class="title"><span class="text"><strong>choisissez un </strong>type de calendrier</span></h4>
+						
+							<fieldset>
+								<h4><span>et,vous nous indiquez une quantité. </span></h4>
+								<h4><span>Ensuite, vous nous fournissez vos photos, le texte que vous souhaitez imprimer (Bonne année, joyeuses fêtes, Etc...), votre logo, et tout les fichiers nécéssaires à la réalisation de vos annonces (sponsors). </span></h4>
+								<h4><span>Tous vos documents peuvent nous parvenir soit par CD, soit par clé USB (qui vous sera rendu avec les calendriers ) envoyé à l'adresse suivante :</span></h4>
+								<h4><span>Calendrier à GoGo, Benoit Pottier</span></h4>						                            
+								<h4><span>376 Route de Bosc Mesnil</span></h4>
+								<h4><span>76680 Neufbosc</span></h4>
+								<h4><span>soit, vous nous envoyez vos documents à l'aide d'un lien Picasa,Onedrive, ou autre lien iCloud; Il vous suffira de nous faire parvenir le lien<a href="index.html">.</a></span></h4>
+								
+								
+							</fieldset>
+										
+					</div>				
+				</div>
+			
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="quisommesnous.html">Qui sommes nous</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="devis.html">Demande de devis</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Nos Produits</h4>
+                    <ul>
+                        <li><a href="sousmainasso.html">Pour Associations</a></li>
+                        <li><a href="bancairesouple.html">Pour Entreprises</a></li>
+                        <li><a href="calendrier12pages.html">Pour Écoles</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <p>Calendrier à GoGo</p>
+                    <p>Tel : 06 50 83 43 04</p>
+                    <p>Email : calendrieragogo@sfr.fr</p>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2025 Calendrier à GoGo. Tous droits réservés.
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Simple Tab Script for migrated content
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabs = document.querySelectorAll('.nav-tabs a');
+            tabs.forEach(tab => {
+                tab.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    // Remove active class from all tabs and panes
+                    document.querySelectorAll('.nav-tabs li').forEach(li => li.classList.remove('active'));
+                    document.querySelectorAll('.tab-pane').forEach(pane => pane.classList.remove('active'));
+                    
+                    // Add active class to clicked tab and target pane
+                    this.parentElement.classList.add('active');
+                    const targetId = this.getAttribute('href').substring(1);
+                    document.getElementById(targetId).classList.add('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
