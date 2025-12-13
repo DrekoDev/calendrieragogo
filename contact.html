@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>Contact - Calendrier à GoGo</title>
+    <meta name="description" content="Contactez Calendrier à GoGo. Devis gratuit, informations sur nos produits.">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
+
 <body>
 
     <!-- Header -->
@@ -20,45 +23,76 @@
             </div>
             <nav class="nav-links">
                 <a href="index.html">Accueil</a>
-                <a href="#">Association</a>
-                <a href="#">Entreprise</a>
-                <a href="#">École</a>
+                <a href="sousmainasso.html">Association</a>
+                <a href="bancairesouple.html">Entreprise</a>
+                <a href="calendrier12pages.html">École</a>
                 <a href="devis.html" class="btn-cta">Demander un Devis</a>
             </nav>
         </div>
     </header>
 
-    <!-- Page Header -->
-    <section class="hero" style="height: 30vh; min-height: 250px; background-image: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.7)), url('images/bannieresite.jpg');">
+    <!-- Hero Section -->
+    <section class="hero" style="height: 40vh; min-height: 300px; background-image: url('images/bannieresite.jpg');">
         <div class="container hero-content">
-            <h1>Contact</h1>
+            <h1>Contactez-nous</h1>
+            <p>Notre équipe est à votre écoute pour tous vos projets</p>
         </div>
     </section>
 
-    <!-- Main Content -->
-    <section class="container" style="padding: 4rem 0;">
-        				
-				<div class="row">				
-					<div class="span5">
-						<div>
-							<h5>Nous écrire</h5>
-							<p><strong>Calendrier à GoGo</strong><br>
-							<strong>Pottier Benoit</strong><br>
-							<strong>376 Route de Bosc Mesnil</strong><br>
-							<strong>76680 Neufbosc</strong>							
-							</p>
-							<br/>
-							<h5>Vous pouvez nous joindre par tel</h5>
-							<p><strong>Tel:</strong>&nbsp;(+33) 06 50 83 43 04<br>
-							
-							<strong>Email:</strong>&nbsp;<a href="mailto:calendrieragogo@sfr.fr">calendrieragogo@sfr.fr</a>					
-							</p>
-						</div>
-					</div>
-									
-				</div>
-			
+    <!-- Additional Content -->
+    <section class="contact-section" style="padding: 4rem 0;">
+        <div class="container">
+            <div style="display: flex; flex-wrap: wrap; gap: 4rem;">
+
+                <!-- Contact Info -->
+                <div style="flex: 1; min-width: 300px;">
+                    <h2 style="margin-bottom: 2rem;">Nos Coordonnées</h2>
+
+                    <div style="margin-bottom: 2rem; display: flex; gap: 1rem; align-items: flex-start;">
+                        <div style="background: var(--primary-color); color: white; padding: 1rem; border-radius: 50%;">
+                            <i class="fas fa-map-marker-alt fa-lg"></i>
+                        </div>
+                        <div>
+                            <h4 style="margin-bottom: 0.5rem;">Adresse</h4>
+                            <p>Calendrier à GoGo<br>Pottier Benoit<br>376 Route de Bosc Mesnil<br>76680 Neufbosc</p>
+                        </div>
+                    </div>
+
+                    <div style="margin-bottom: 2rem; display: flex; gap: 1rem; align-items: flex-start;">
+                        <div style="background: var(--primary-color); color: white; padding: 1rem; border-radius: 50%;">
+                            <i class="fas fa-phone fa-lg"></i>
+                        </div>
+                        <div>
+                            <h4 style="margin-bottom: 0.5rem;">Téléphone</h4>
+                            <p><a href="tel:0650834304" style="color: var(--primary-color); font-weight: bold;">06 50 83
+                                    43 04</a></p>
+                        </div>
+                    </div>
+
+                    <div style="margin-bottom: 2rem; display: flex; gap: 1rem; align-items: flex-start;">
+                        <div style="background: var(--primary-color); color: white; padding: 1rem; border-radius: 50%;">
+                            <i class="fas fa-envelope fa-lg"></i>
+                        </div>
+                        <div>
+                            <h4 style="margin-bottom: 0.5rem;">Email</h4>
+                            <p><a href="mailto:calendrieragogo@sfr.fr"
+                                    style="color: var(--primary-color); font-weight: bold;">calendrieragogo@sfr.fr</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Google Map -->
+                <div
+                    style="flex: 1; min-width: 300px; height: 400px; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-md);">
+                    <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7629.955672494118!2d1.3567244767738253!3d49.650013546438316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e0ca4bd87d63b3%3A0x5f014b644c5ee4f1!2s376+Route+de+Bosc+Mesnil%2C+76680+Neufbosc!5e0!3m2!1sfr!2sfr!4v1508865099384"></iframe>
+                </div>
+
+            </div>
+        </div>
     </section>
+
 
     <!-- Footer -->
     <footer>
@@ -86,6 +120,10 @@
                     <p>Calendrier à GoGo</p>
                     <p>Tel : 06 50 83 43 04</p>
                     <p>Email : calendrieragogo@sfr.fr</p>
+                    <div class="social-icons" style="margin-top: 1rem;">
+                        <a href="#" style="color: white; margin-right: 10px;"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="#" style="color: white;"><i class="fab fa-twitter fa-lg"></i></a>
+                    </div>
                 </div>
             </div>
             <div class="copyright">
@@ -95,25 +133,6 @@
     </footer>
 
     <script src="js/main.js"></script>
-    <script>
-        // Simple Tab Script for migrated content
-        document.addEventListener('DOMContentLoaded', function() {
-            const tabs = document.querySelectorAll('.nav-tabs a');
-            tabs.forEach(tab => {
-                tab.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    
-                    // Remove active class from all tabs and panes
-                    document.querySelectorAll('.nav-tabs li').forEach(li => li.classList.remove('active'));
-                    document.querySelectorAll('.tab-pane').forEach(pane => pane.classList.remove('active'));
-                    
-                    // Add active class to clicked tab and target pane
-                    this.parentElement.classList.add('active');
-                    const targetId = this.getAttribute('href').substring(1);
-                    document.getElementById(targetId).classList.add('active');
-                });
-            });
-        });
-    </script>
 </body>
+
 </html>
