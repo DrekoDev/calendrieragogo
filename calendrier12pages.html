@@ -23,141 +23,332 @@
                 <i class="fas fa-bars fa-lg"></i>
             </div>
             <nav class="nav-links">
-                <a href="index.html">Accueil</a>
-                <a href="sousmainasso.html">Association</a>
-                <a href="bancairesouple.html">Entreprise</a>
-                <a href="calendrier12pages.html" class="active">École</a>
+                <div class="nav-item">
+                    <a href="index.html" class="nav-link">Accueil</a>
+                </div>
+
+                <div class="nav-item">
+                    <a href="sousmainasso.html" class="nav-link active">Association <i class="fas fa-chevron-down"
+                            style="font-size: 0.8em; margin-left: 5px;"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="sousmainasso.html" class="dropdown-item">Calendrier sous main</a>
+                        <a href="agendaasso.html" class="dropdown-item">Calendrier agenda</a>
+                        <a href="calendrierchevalet.html" class="dropdown-item">Nouveau : calendrier chevalet</a>
+                        <a href="calendrier12pages.html" class="dropdown-item">Calendrier 12 pages</a>
+                        <a href="agrafeasso.html" class="dropdown-item">Calendrier éphéméride agrafé</a>
+                        <a href="ephemerideimprime.html" class="dropdown-item">Calendrier éphéméride imprimé</a>
+                        <a href="prixminiasso.html" class="dropdown-item">Notre calendrier prix mini</a>
+                    </div>
+                </div>
+
+                <div class="nav-item">
+                    <a href="bancairesouple.html" class="nav-link">Entreprise <i class="fas fa-chevron-down"
+                            style="font-size: 0.8em; margin-left: 5px;"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="bancairesouple.html" class="dropdown-item">Calendrier Bancaire souple</a>
+                        <a href="agrafeentreprise.html" class="dropdown-item">Calendrier bloc mensuel Agrafé</a>
+                        <a href="calendriersurmesure.html" class="dropdown-item">Calendrier sur mesure</a>
+                        <a href="sousmainfleuriste.html" class="dropdown-item">Spécial Fleuriste</a>
+                    </div>
+                </div>
+
+                <div class="nav-item">
+                    <a href="calendrier12pages.html" class="nav-link">École <i class="fas fa-chevron-down"
+                            style="font-size: 0.8em; margin-left: 5px;"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="sousmainecole.html" class="dropdown-item">Calendrier sous main</a>
+                        <a href="agrafeecole.html" class="dropdown-item">Calendrier éphéméride agrafé</a>
+                        <a href="imprimeecole.html" class="dropdown-item">Calendrier éphéméride imprimé</a>
+                    </div>
+                </div>
+
                 <a href="devis.html" class="btn-cta">Demander un Devis</a>
             </nav>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero" style="height: 40vh; min-height: 300px; background-image: url('images/bannieresite.jpg');">
+    <section class="hero" style="min-height: 400px; background-image: url('images/bannieresite.jpg');">
         <div class="container hero-content">
             <h1>Calendrier 12 Pages</h1>
             <p>Le must des calendriers avec reliure métallique</p>
         </div>
     </section>
 
-    <!-- Product Detail Section -->
+    <!-- Product Page Content -->
     <section class="products">
         <div class="container">
-            <div class="row" style="display: flex; flex-wrap: wrap; gap: 2rem;">
+            <div class="page-grid">
 
-                <!-- Product Images -->
-                <div class="col-image" style="flex: 1; min-width: 300px;">
-                    <div class="product-image" style="height: auto; margin-bottom: 20px;">
-                        <img src="images/association/21.jpg" alt="Calendrier 12 Pages"
-                            style="width: 100%; border-radius: var(--radius-md); box-shadow: var(--shadow-md);">
+                <!-- Main Content (Left Column) -->
+                <div class="main-content">
+
+                    <!-- Product Header (Images + Short Info) -->
+                    <div class="product-main-flex"
+                        style="display: flex; flex-wrap: wrap; gap: 2rem; margin-bottom: 3rem;">
+                        <div class="col-image" style="flex: 1; min-width: 300px;">
+                            <div class="product-image" style="height: auto; margin-bottom: 20px;">
+                                <img src="images/association/21.jpg" alt="Calendrier 12 Pages"
+                                    style="width: 100%; border-radius: var(--radius-md); box-shadow: var(--shadow-md);">
+                            </div>
+                            <div class="thumbnails" style="display: flex; gap: 10px; flex-wrap: wrap;">
+                                <img src="images/association/213.jpg" onclick="changeImage(this.src)"
+                                    style="width: 60px; height: 60px; object-fit: cover; border-radius: var(--radius-sm); cursor: pointer;">
+                                <img src="images/association/216.jpg" onclick="changeImage(this.src)"
+                                    style="width: 60px; height: 60px; object-fit: cover; border-radius: var(--radius-sm); cursor: pointer;">
+                                <img src="images/association/218.jpg" onclick="changeImage(this.src)"
+                                    style="width: 60px; height: 60px; object-fit: cover; border-radius: var(--radius-sm); cursor: pointer;">
+                                <img src="images/association/214.jpg" onclick="changeImage(this.src)"
+                                    style="width: 60px; height: 60px; object-fit: cover; border-radius: var(--radius-sm); cursor: pointer;">
+                            </div>
+                        </div>
+
+                        <div class="col-info" style="flex: 1; min-width: 300px;">
+                            <h2 class="product-title" style="font-size: 2rem; margin-bottom: 1rem;">Calendrier 12 Pages
+                                Reliés</h2>
+                            <p class="product-price"
+                                style="font-size: 1.5rem; color: var(--primary-color); font-weight: bold; margin-bottom: 1.5rem;">
+                                À partir de 1,69€ TTC</p>
+
+                            <div class="product-description" style="margin-bottom: 2rem; line-height: 1.8;">
+                                <p><strong>Format :</strong> A4 (21cm x 30cm)</p>
+                                <p><strong>Finitions :</strong> Reliure métallique Wire-O + crochet</p>
+                                <p><strong>Papier :</strong> Satiné 170g</p>
+                                <p><strong>Minimum de commande :</strong> 100 exemplaires</p>
+                                <p><strong>Délai de livraison :</strong> 10 à 15 jours</p>
+                            </div>
+
+                            <a href="devis.html" class="btn-highlight">
+                                <span>Demander un devis</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
                     </div>
-                    <div class="thumbnails" style="display: flex; gap: 10px; flex-wrap: wrap;">
-                        <img src="images/association/213.jpg"
-                            style="width: 80px; height: 80px; object-fit: cover; border-radius: var(--radius-sm); cursor: pointer;"
-                            onclick="changeImage(this.src)">
-                        <img src="images/association/216.jpg"
-                            style="width: 80px; height: 80px; object-fit: cover; border-radius: var(--radius-sm); cursor: pointer;"
-                            onclick="changeImage(this.src)">
-                        <img src="images/association/218.jpg"
-                            style="width: 80px; height: 80px; object-fit: cover; border-radius: var(--radius-sm); cursor: pointer;"
-                            onclick="changeImage(this.src)">
-                        <img src="images/association/214.jpg"
-                            style="width: 80px; height: 80px; object-fit: cover; border-radius: var(--radius-sm); cursor: pointer;"
-                            onclick="changeImage(this.src)">
-                        <img src="images/association/212.jpg"
-                            style="width: 80px; height: 80px; object-fit: cover; border-radius: var(--radius-sm); cursor: pointer;"
-                            onclick="changeImage(this.src)">
-                        <img src="images/association/215.jpg"
-                            style="width: 80px; height: 80px; object-fit: cover; border-radius: var(--radius-sm); cursor: pointer;"
-                            onclick="changeImage(this.src)">
+
+                    <!-- Modern Tabs (Description / Info) -->
+                    <div class="modern-tabs">
+                        <div class="tab-header">
+                            <button class="tab-btn active" onclick="openTab(event, 'description')">Description</button>
+                            <button class="tab-btn" onclick="openTab(event, 'info')">Informations
+                                complémentaires</button>
+                        </div>
+
+                        <div class="tab-body">
+                            <!-- Tab 1: Description -->
+                            <div id="description" class="tab-pane active">
+                                <ul class="feature-list">
+                                    <li class="feature-item">
+                                        <div class="feature-icon"><i class="fas fa-ruler-combined"></i></div>
+                                        <div class="feature-text">
+                                            <strong>Format A4</strong>
+                                            Dimension 21cm x 30cm (Ouvert : 21cm x 60cm).
+                                        </div>
+                                    </li>
+                                    <li class="feature-item">
+                                        <div class="feature-icon"><i class="fas fa-layer-group"></i></div>
+                                        <div class="feature-text">
+                                            <strong>Papier Satiné</strong>
+                                            170g haute qualité (Option papier plus épais disponible).
+                                        </div>
+                                    </li>
+                                    <li class="feature-item">
+                                        <div class="feature-icon"><i class="fas fa-scroll"></i></div>
+                                        <div class="feature-text">
+                                            <strong>Reliure Métallique</strong>
+                                            Finition Wire-O avec crochet de suspension intégré.
+                                        </div>
+                                    </li>
+                                    <li class="feature-item">
+                                        <div class="feature-icon"><i class="fas fa-magic"></i></div>
+                                        <div class="feature-text">
+                                            <strong>Finition Vernis</strong>
+                                            Vernis acrylique pour des couleurs éclatantes.
+                                        </div>
+                                    </li>
+                                    <li class="feature-item">
+                                        <div class="feature-icon"><i class="fas fa-images"></i></div>
+                                        <div class="feature-text">
+                                            <strong>Grande Personnalisation</strong>
+                                            Jusqu'à 3 photos par page + encarts sponsors.
+                                        </div>
+                                    </li>
+                                    <li class="feature-item">
+                                        <div class="feature-icon"><i class="fas fa-leaf"></i></div>
+                                        <div class="feature-text">
+                                            <strong>Écologique</strong>
+                                            Certifié PEFC et Imprim'vert.
+                                        </div>
+                                    </li>
+                                </ul>
+
+                                <div class="profit-example">
+                                    <h4>Exemple de bénéfice possible</h4>
+                                    <div
+                                        style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 1rem;">
+                                        <div>
+                                            <p
+                                                style="font-weight: 600; color: var(--secondary-color); margin-bottom: 0.5rem; text-decoration: underline;">
+                                                Pour 250 calendriers :</p>
+                                            <p style="font-size: 0.95rem;">Coût achat : 250 x 2.95€ = 737.50€</p>
+                                            <p style="font-size: 0.95rem;">Recette conseillée (6€/u) : 1500€</p>
+                                            <p
+                                                style="color: var(--success-color); font-weight: bold; font-size: 1.1rem; margin-top: 0.5rem;">
+                                                Bénéfice : 762,50€</p>
+                                        </div>
+                                        <div>
+                                            <p
+                                                style="font-weight: 600; color: var(--secondary-color); margin-bottom: 0.5rem; text-decoration: underline;">
+                                                Pour 500 calendriers :</p>
+                                            <p style="font-size: 0.95rem;">Coût achat : 500 x 1.80€ = 900€</p>
+                                            <p style="font-size: 0.95rem;">Recette conseillée (6€/u) : 3000€</p>
+                                            <p
+                                                style="color: var(--success-color); font-weight: bold; font-size: 1.1rem; margin-top: 0.5rem;">
+                                                Bénéfice : 2100€</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Tab 2: Info -->
+                            <div id="info" class="tab-pane">
+                                <h4 style="margin-bottom: 1rem; color: var(--secondary-color);">Comment procéder ?</h4>
+                                <ul style="list-style: none; padding: 0;">
+                                    <li style="margin-bottom: 1rem; display: flex; align-items: flex-start; gap: 1rem;">
+                                        <i class="fas fa-camera"
+                                            style="color: var(--primary-color); margin-top: 5px;"></i>
+                                        <div>
+                                            <strong>Photos :</strong><br>
+                                            Préparez vos plus belles photos pour chaque mois de l'année.
+                                        </div>
+                                    </li>
+                                    <li style="margin-bottom: 1rem; display: flex; align-items: flex-start; gap: 1rem;">
+                                        <i class="fas fa-envelope"
+                                            style="color: var(--primary-color); margin-top: 5px;"></i>
+                                        <div>
+                                            <strong>Envoi :</strong><br>
+                                            Utilisez WeTransfer ou envoyez par email à <a
+                                                href="mailto:calendrieragogo@sfr.fr"
+                                                style="color: var(--primary-color); font-weight: 600;">calendrieragogo@sfr.fr</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
+
+                    <!-- Related Products -->
+                    <div class="related-products-section">
+                        <h3 class="section-title">D'autres formats disponibles</h3>
+                        <div class="product-grid" style="grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));">
+
+                            <div class="product-card">
+                                <a href="sousmainasso.html" class="product-card-link">
+                                    <div class="product-image">
+                                        <img src="images/association/1.jpg" alt="Sous Main">
+                                    </div>
+                                    <div class="product-info">
+                                        <div class="product-category">Association</div>
+                                        <h3 class="product-title" style="font-size: 1.1rem;">Calendrier Sous Main</h3>
+                                        <div class="product-price">À partir de 0,30€</div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="product-card">
+                                <a href="agendaasso.html" class="product-card-link">
+                                    <div class="product-image">
+                                        <img src="images/association/127.jpg" alt="Agenda">
+                                    </div>
+                                    <div class="product-info">
+                                        <div class="product-category">Association</div>
+                                        <h3 class="product-title" style="font-size: 1.1rem;">Calendrier Agenda</h3>
+                                        <div class="product-price">À partir de 0,45€</div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="product-card">
+                                <a href="calendrierchevalet.html" class="product-card-link">
+                                    <div class="product-image">
+                                        <img src="images/association/161.jpg" alt="Chevalet">
+                                    </div>
+                                    <div class="product-info">
+                                        <div class="product-category">Association</div>
+                                        <h3 class="product-title" style="font-size: 1.1rem;">Calendrier Chevalet</h3>
+                                        <div class="product-price">À partir de 1,20€</div>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
                 </div>
 
-                <!-- Product Info -->
-                <div class="col-info" style="flex: 1; min-width: 300px;">
-                    <h2 class="product-title" style="font-size: 2rem; margin-bottom: 1rem;">Calendrier 12 Pages Reliés
-                    </h2>
-                    <p class="product-price"
-                        style="font-size: 1.5rem; color: var(--primary-color); font-weight: bold; margin-bottom: 1.5rem;">
-                        À partir de 1,69€ TTC</p>
-
-                    <div class="product-description" style="margin-bottom: 2rem; line-height: 1.8;">
-                        <p><i class="fas fa-check-circle" style="color: var(--success-color);"></i> <strong>Finition
-                                :</strong> Reliure métallique + crochet, vernis acrylique.</p>
-                        <p><i class="fas fa-check-circle" style="color: var(--success-color);"></i> <strong>Dimension
-                                :</strong> 21cm x 30cm (A4).</p>
-                        <p><i class="fas fa-check-circle" style="color: var(--success-color);"></i> <strong>Support
-                                :</strong> Papier 170g (plus épais sur demande).</p>
-                        <p><i class="fas fa-check-circle" style="color: var(--success-color);"></i>
-                            <strong>Personnalisation :</strong> Jusqu'à 3 photos/page + sponsors.</p>
-                        <p><i class="fas fa-check-circle" style="color: var(--success-color);"></i> <strong>Écologique
-                                :</strong> Certifié PEFC et Imprim'vert.</p>
-                    </div>
-
-                    <div
-                        style="background: #f8fafc; padding: 1.5rem; border-radius: var(--radius-md); border: 1px solid #e2e8f0; margin-bottom: 2rem;">
-                        <h3 style="margin-bottom: 1rem;">Tarifs (TTC)</h3>
-                        <ul style="list-style: none;">
-                            <li
-                                style="display: flex; justify-content: space-between; border-bottom: 1px solid #e2e8f0; padding: 0.5rem 0;">
-                                <span>100 à 149 ex.</span> <strong>3.41€ / unité</strong>
+                <!-- Right Column: Sidebar -->
+                <aside class="sidebar">
+                    <div class="sidebar-block">
+                        <h4>Nos Tarifs (TTC)</h4>
+                        <ul class="sidebar-list">
+                            <li style="display: flex; justify-content: space-between;">
+                                <span>100 à 149 ex.</span>
+                                <strong>3.41€</strong>
                             </li>
-                            <li
-                                style="display: flex; justify-content: space-between; border-bottom: 1px solid #e2e8f0; padding: 0.5rem 0;">
-                                <span>150 à 199 ex.</span> <strong>3.15€ / unité</strong>
+                            <li style="display: flex; justify-content: space-between;">
+                                <span>150 à 199 ex.</span>
+                                <strong>3.15€</strong>
                             </li>
-                            <li
-                                style="display: flex; justify-content: space-between; border-bottom: 1px solid #e2e8f0; padding: 0.5rem 0;">
-                                <span>200 à 499 ex.</span> <strong>2.90€ / unité</strong>
+                            <li style="display: flex; justify-content: space-between;">
+                                <span>200 à 499 ex.</span>
+                                <strong>2.90€</strong>
                             </li>
-                            <li
-                                style="display: flex; justify-content: space-between; border-bottom: 1px solid #e2e8f0; padding: 0.5rem 0;">
-                                <span>500 à 699 ex.</span> <strong>2.35€ / unité</strong>
+                            <li style="display: flex; justify-content: space-between;">
+                                <span>500 à 699 ex.</span>
+                                <strong>2.35€</strong>
                             </li>
-                            <li
-                                style="display: flex; justify-content: space-between; border-bottom: 1px solid #e2e8f0; padding: 0.5rem 0;">
-                                <span>700 à 999 ex.</span> <strong>2.09€ / unité</strong>
+                            <li style="display: flex; justify-content: space-between;">
+                                <span>700 à 999 ex.</span>
+                                <strong>2.09€</strong>
                             </li>
-                            <li
-                                style="display: flex; justify-content: space-between; border-bottom: 1px solid #e2e8f0; padding: 0.5rem 0;">
-                                <span>1000 à 1499 ex.</span> <strong>1.99€ / unité</strong>
+                            <li style="display: flex; justify-content: space-between;">
+                                <span>1000 à 1499 ex.</span>
+                                <strong>1.99€</strong>
                             </li>
-                            <li style="display: flex; justify-content: space-between; padding: 0.5rem 0;">
-                                <span>1500+ ex.</span> <strong>1.69€ / unité</strong>
+                            <li style="display: flex; justify-content: space-between;">
+                                <span>1500+ ex.</span>
+                                <strong>1.69€</strong>
                             </li>
                         </ul>
+                        <p style="font-size: 0.8rem; color: var(--text-light); margin-top: 1rem; line-height: 1.4;">
+                            * Tarifs TTC incluant réalisation, maquette et impression. Frais de port en sus.
+                        </p>
                     </div>
 
-                    <a href="devis.html" class="btn-cta"
-                        style="width: 100%; text-align: center; justify-content: center;">Demander un devis</a>
-                </div>
-            </div>
-
-            <!-- Additional Info Section -->
-            <div class="row" style="margin-top: 4rem;">
-                <div class="col-12">
-                    <h3
-                        style="margin-bottom: 1.5rem; border-bottom: 2px solid var(--accent-color); display: inline-block;">
-                        Exemple de rentabilité</h3>
-                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
-                        <div class="feature-card">
-                            <h4>Pour 250 calendriers</h4>
-                            <p>Vente conseillée : 6€</p>
-                            <p>Coût achat : 250 x 2.95€ = 737.50€</p>
-                            <p>Recette : 250 x 6€ = 1500€</p>
-                            <h5 style="color: var(--success-color); margin-top: 1rem;">Bénéfice : 762,50€</h5>
-                        </div>
-                        <div class="feature-card">
-                            <h4>Pour 500 calendriers</h4>
-                            <p>Vente conseillée : 6€</p>
-                            <p>Coût achat : 500 x 1.80€ = 900€</p>
-                            <p>Recette : 500 x 6€ = 3000€</p>
-                            <h5 style="color: var(--success-color); margin-top: 1rem;">Bénéfice : 2100€</h5>
+                    <div class="sidebar-block">
+                        <h4>Meilleurs Ventes</h4>
+                        <div class="small-product-list">
+                            <div class="small-product-item">
+                                <a href="sousmainasso.html"><img src="images/association/1.jpg" alt="Sous Main"></a>
+                                <div style="display: flex; flex-direction: column;">
+                                    <a href="sousmainasso.html"
+                                        style="font-weight: 600; font-size: 0.95rem; margin-bottom: 0.25rem;">Calendrier
+                                        Sous Main</a>
+                                    <span style="font-size: 0.9rem; color: var(--primary-color);">Dès 0.30€</span>
+                                </div>
+                            </div>
+                            <div class="small-product-item">
+                                <a href="agendaasso.html"><img src="images/association/127.jpg" alt="Agenda"></a>
+                                <div style="display: flex; flex-direction: column;">
+                                    <a href="agendaasso.html"
+                                        style="font-weight: 600; font-size: 0.95rem; margin-bottom: 0.25rem;">Calendrier
+                                        Agenda</a>
+                                    <span style="font-size: 0.9rem; color: var(--primary-color);">Dès 0.45€</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </aside>
             </div>
-
         </div>
     </section>
 

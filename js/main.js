@@ -57,3 +57,29 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+// Tab Switching Function
+function openTab(evt, tabName) {
+    // Hide all tab panes
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tab-pane");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+        tabcontent[i].classList.remove("active");
+    }
+
+    // Deactivate all tab buttons
+    tablinks = document.getElementsByClassName("tab-btn");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].classList.remove("active");
+    }
+
+    // Show the specific tab and activate the button
+    document.getElementById(tabName).style.display = "block";
+
+    // Use a small timeout to allow the display change to register before adding active class for animation
+    setTimeout(() => {
+        document.getElementById(tabName).classList.add("active");
+    }, 10);
+
+    evt.currentTarget.classList.add("active");
+}

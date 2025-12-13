@@ -23,118 +23,277 @@
                 <i class="fas fa-bars fa-lg"></i>
             </div>
             <nav class="nav-links">
-                <a href="index.html">Accueil</a>
-                <a href="sousmainasso.html" class="active">Association</a>
-                <a href="bancairesouple.html">Entreprise</a>
-                <a href="calendrier12pages.html">École</a>
+                <div class="nav-item">
+                    <a href="index.html" class="nav-link">Accueil</a>
+                </div>
+
+                <div class="nav-item">
+                    <a href="sousmainasso.html" class="nav-link active">Association <i class="fas fa-chevron-down"
+                            style="font-size: 0.8em; margin-left: 5px;"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="sousmainasso.html" class="dropdown-item">Calendrier sous main</a>
+                        <a href="agendaasso.html" class="dropdown-item">Calendrier agenda</a>
+                        <a href="calendrierchevalet.html" class="dropdown-item">Nouveau : calendrier chevalet</a>
+                        <a href="calendrier12pages.html" class="dropdown-item">Calendrier 12 pages</a>
+                        <a href="agrafeasso.html" class="dropdown-item">Calendrier éphéméride agrafé</a>
+                        <a href="ephemerideimprime.html" class="dropdown-item">Calendrier éphéméride imprimé</a>
+                        <a href="prixminiasso.html" class="dropdown-item">Notre calendrier prix mini</a>
+                    </div>
+                </div>
+
+                <div class="nav-item">
+                    <a href="bancairesouple.html" class="nav-link">Entreprise <i class="fas fa-chevron-down"
+                            style="font-size: 0.8em; margin-left: 5px;"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="bancairesouple.html" class="dropdown-item">Calendrier Bancaire souple</a>
+                        <a href="agrafeentreprise.html" class="dropdown-item">Calendrier bloc mensuel Agrafé</a>
+                        <a href="calendriersurmesure.html" class="dropdown-item">Calendrier sur mesure</a>
+                        <a href="sousmainfleuriste.html" class="dropdown-item">Spécial Fleuriste</a>
+                    </div>
+                </div>
+
+                <div class="nav-item">
+                    <a href="calendrier12pages.html" class="nav-link">École <i class="fas fa-chevron-down"
+                            style="font-size: 0.8em; margin-left: 5px;"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="sousmainecole.html" class="dropdown-item">Calendrier sous main</a>
+                        <a href="agrafeecole.html" class="dropdown-item">Calendrier éphéméride agrafé</a>
+                        <a href="imprimeecole.html" class="dropdown-item">Calendrier éphéméride imprimé</a>
+                    </div>
+                </div>
+
                 <a href="devis.html" class="btn-cta">Demander un Devis</a>
             </nav>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero" style="min-height: 400px; background-image: url('images/bannieresite.jpg');">
+    <section class="hero product-hero" style="background-image: url('images/bannieresite.jpg');">
         <div class="container hero-content">
             <h1>Calendrier Sous Main Équipe</h1>
             <p>L'outil idéal pour les clubs sportifs</p>
         </div>
     </section>
 
-    <!-- Product Detail Section -->
+    <!-- Main Content Grid -->
     <section class="products">
         <div class="container">
-            <div class="row" style="display: flex; flex-wrap: wrap; gap: 2rem;">
+            <div class="page-grid">
 
-                <!-- Product Images -->
-                <div class="col-image" style="flex: 1; min-width: 300px;">
-                    <div class="product-image" style="height: auto; margin-bottom: 20px;">
-                        <img src="images/association/231.jpg" alt="Calendrier Sous Main Équipe"
-                            style="width: 100%; border-radius: var(--radius-md); box-shadow: var(--shadow-md);">
+                <!-- Main Content (Left Column) -->
+                <div class="main-content">
+
+                    <!-- Product Header (Images + Short Info) -->
+                    <div class="product-main-flex"
+                        style="display: flex; flex-wrap: wrap; gap: 2rem; margin-bottom: 3rem;">
+                        <div class="col-image" style="flex: 1; min-width: 300px;">
+                            <div class="product-image" style="height: auto; margin-bottom: 20px;">
+                                <img src="images/association/231.jpg" alt="Calendrier Sous Main Équipe"
+                                    style="width: 100%; border-radius: var(--radius-md); box-shadow: var(--shadow-md);">
+                            </div>
+                            <div class="thumbnails" style="display: flex; gap: 10px; flex-wrap: wrap;">
+                                <img src="images/association/23.jpg" onclick="changeImage(this.src)"
+                                    style="width: 60px; height: 60px; object-fit: cover; border-radius: var(--radius-sm); cursor: pointer;">
+                            </div>
+                        </div>
+
+                        <div class="col-info" style="flex: 1; min-width: 300px;">
+                            <h2 class="product-title" style="font-size: 2rem; margin-bottom: 1rem;">Calendrier Sous Main
+                                Équipe</h2>
+                            <p class="product-price"
+                                style="font-size: 1.5rem; color: var(--primary-color); font-weight: bold; margin-bottom: 1.5rem;">
+                                À partir de 0,85€ TTC</p>
+
+                            <div class="product-description" style="margin-bottom: 2rem; line-height: 1.8;">
+                                <p><strong>Dimension :</strong> 42cm x 30cm</p>
+                                <p><strong>Support :</strong> Cartonné 300g</p>
+                                <p><strong>Finition :</strong> Vernis acrylique</p>
+                                <p><strong>Personnalisation :</strong> 1 photo par équipe + sponsors</p>
+                                <p><strong>Commande :</strong> Min 30/équipe, Min 150 au total</p>
+                            </div>
+
+                            <a href="devis.html" class="btn-highlight">
+                                <span>Demander un devis</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
                     </div>
-                    <div class="thumbnails" style="display: flex; gap: 10px; flex-wrap: wrap;">
-                        <img src="images/association/23.jpg"
-                            style="width: 80px; height: 80px; object-fit: cover; border-radius: var(--radius-sm); cursor: pointer;"
-                            onclick="changeImage(this.src)">
+
+                    <!-- Modern Tabs (Description / Info) -->
+                    <div class="modern-tabs">
+                        <div class="tab-header">
+                            <button class="tab-btn active" onclick="openTab(event, 'description')">Description</button>
+                            <button class="tab-btn" onclick="openTab(event, 'info')">Rentabilité</button>
+                        </div>
+
+                        <div class="tab-body">
+                            <!-- Tab 1: Description -->
+                            <div id="description" class="tab-pane active">
+                                <ul class="feature-list">
+                                    <li class="feature-item">
+                                        <div class="feature-icon"><i class="fas fa-users"></i></div>
+                                        <div class="feature-text">
+                                            <strong>Spécial Clubs</strong>
+                                            Une version différente pour chaque équipe de votre club (U9, U11,
+                                            Seniors...) avec leur propre photo.
+                                        </div>
+                                    </li>
+                                    <li class="feature-item">
+                                        <div class="feature-icon"><i class="fas fa-handshake"></i></div>
+                                        <div class="feature-text">
+                                            <strong>Sponsors Communs</strong>
+                                            Les encarts publicitaires sont identiques sur tous les calendriers pour
+                                            simplifier la gestion.
+                                        </div>
+                                    </li>
+                                    <li class="feature-item">
+                                        <div class="feature-icon"><i class="fas fa-print"></i></div>
+                                        <div class="feature-text">
+                                            <strong>Qualité Maximale</strong>
+                                            Impression haute définition sur carton rigide 300g avec finition vernis.
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- Tab 2: Info (Rentabilité) -->
+                            <div id="info" class="tab-pane">
+                                <h4 style="margin-bottom: 1rem; color: var(--secondary-color);">Exemple de bénéfice pour
+                                    votre club</h4>
+                                <div
+                                    style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 1rem;">
+                                    <div>
+                                        <p
+                                            style="font-weight: 600; color: var(--secondary-color); margin-bottom: 0.5rem; text-decoration: underline;">
+                                            Pour 150 calendriers :</p>
+                                        <p style="font-size: 0.95rem;">Coût achat : 150 x 1.49€ ≈ 223.5€</p>
+                                        <p style="font-size: 0.95rem;">Recette conseillée (4€/u) : 600€</p>
+                                        <p
+                                            style="color: var(--success-color); font-weight: bold; font-size: 1.1rem; margin-top: 0.5rem;">
+                                            Bénéfice : 376,50€</p>
+                                    </div>
+                                    <div>
+                                        <p
+                                            style="font-weight: 600; color: var(--secondary-color); margin-bottom: 0.5rem; text-decoration: underline;">
+                                            Pour 500 calendriers :</p>
+                                        <p style="font-size: 0.95rem;">Coût achat : 500 x 1.15€ = 575€</p>
+                                        <p style="font-size: 0.95rem;">Recette conseillée (4€/u) : 2000€</p>
+                                        <p
+                                            style="color: var(--success-color); font-weight: bold; font-size: 1.1rem; margin-top: 0.5rem;">
+                                            Bénéfice : 1425€</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+
+                    <!-- Related Products -->
+                    <div class="related-products-section">
+                        <h3 class="section-title">Voir aussi</h3>
+                        <div class="product-grid" style="grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));">
+
+                            <div class="product-card">
+                                <a href="sousmainasso.html" class="product-card-link">
+                                    <div class="product-image">
+                                        <img src="images/association/117.jpg" alt="Sous Main">
+                                    </div>
+                                    <div class="product-info">
+                                        <div class="product-category">Association</div>
+                                        <h3 class="product-title" style="font-size: 1.1rem;">Sous Main Classique</h3>
+                                        <div class="product-price">À partir de 0,30€</div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="product-card">
+                                <a href="ephemerideimprimeequipe.html" class="product-card-link">
+                                    <div class="product-image">
+                                        <img src="images/association/24.jpg" alt="Imprimé Équipe">
+                                    </div>
+                                    <div class="product-info">
+                                        <div class="product-category">Association</div>
+                                        <h3 class="product-title" style="font-size: 1.1rem;">Imprimé Équipe</h3>
+                                        <div class="product-price">À partir de 0,85€</div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="product-card">
+                                <a href="agendaasso.html" class="product-card-link">
+                                    <div class="product-image">
+                                        <img src="images/association/22.jpg" alt="Agenda">
+                                    </div>
+                                    <div class="product-info">
+                                        <div class="product-category">Association</div>
+                                        <h3 class="product-title" style="font-size: 1.1rem;">Calendrier Agenda</h3>
+                                        <div class="product-price">À partir de 0,45€</div>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
                 </div>
 
-                <!-- Product Info -->
-                <div class="col-info" style="flex: 1; min-width: 300px;">
-                    <h2 class="product-title" style="font-size: 2rem; margin-bottom: 1rem;">Calendrier Sous Main Équipe
-                    </h2>
-                    <p class="product-price"
-                        style="font-size: 1.5rem; color: var(--primary-color); font-weight: bold; margin-bottom: 1.5rem;">
-                        À partir de 0,85€ TTC</p>
-
-                    <div class="product-description" style="margin-bottom: 2rem; line-height: 1.8;">
-                        <p><i class="fas fa-check-circle" style="color: var(--success-color);"></i> <strong>Finition
-                                :</strong> Vernis acrylique.</p>
-                        <p><i class="fas fa-check-circle" style="color: var(--success-color);"></i> <strong>Dimension
-                                :</strong> 42cm x 30cm.</p>
-                        <p><i class="fas fa-check-circle" style="color: var(--success-color);"></i> <strong>Support
-                                :</strong> Cartonné 300g.</p>
-                        <p><i class="fas fa-check-circle" style="color: var(--success-color);"></i>
-                            <strong>Personnalisation :</strong> 1 photo/équipe + sponsors (identiques).</p>
-                        <p><i class="fas fa-cart-arrow-down" style="color: var(--accent-color);"></i> <strong>Commande
-                                :</strong> Min 30/équipe, Min 150 total.</p>
-                    </div>
-
-                    <div
-                        style="background: #f8fafc; padding: 1.5rem; border-radius: var(--radius-md); border: 1px solid #e2e8f0; margin-bottom: 2rem;">
-                        <h3 style="margin-bottom: 1rem;">Tarifs (TTC)</h3>
-                        <ul style="list-style: none;">
-                            <li
-                                style="display: flex; justify-content: space-between; border-bottom: 1px solid #e2e8f0; padding: 0.5rem 0;">
-                                <span>150 à 299 ex.</span> <strong>1.65€ / unité</strong>
+                <!-- Right Column: Sidebar -->
+                <aside class="sidebar">
+                    <div class="sidebar-block">
+                        <h4>Nos Tarifs (TTC)</h4>
+                        <ul class="sidebar-list">
+                            <li>
+                                <span>150 à 299 ex.</span>
+                                <strong>1.65€</strong>
                             </li>
-                            <li
-                                style="display: flex; justify-content: space-between; border-bottom: 1px solid #e2e8f0; padding: 0.5rem 0;">
-                                <span>300 à 499 ex.</span> <strong>1.45€ / unité</strong>
+                            <li>
+                                <span>300 à 499 ex.</span>
+                                <strong>1.45€</strong>
                             </li>
-                            <li
-                                style="display: flex; justify-content: space-between; border-bottom: 1px solid #e2e8f0; padding: 0.5rem 0;">
-                                <span>500 à 799 ex.</span> <strong>1.25€ / unité</strong>
+                            <li>
+                                <span>500 à 799 ex.</span>
+                                <strong>1.25€</strong>
                             </li>
-                            <li
-                                style="display: flex; justify-content: space-between; border-bottom: 1px solid #e2e8f0; padding: 0.5rem 0;">
-                                <span>800 à 999 ex.</span> <strong>0.95€ / unité</strong>
+                            <li>
+                                <span>800 à 999 ex.</span>
+                                <strong>0.95€</strong>
                             </li>
-                            <li style="display: flex; justify-content: space-between; padding: 0.5rem 0;">
-                                <span>1000+ ex.</span> <strong>0.85€ / unité</strong>
+                            <li>
+                                <span>1000+ ex.</span>
+                                <strong>0.85€</strong>
                             </li>
                         </ul>
+                        <p style="font-size: 0.8rem; color: var(--text-light); margin-top: 1rem; line-height: 1.4;">
+                            * Tarifs TTC par unité.<br>
+                            * Min 30 ex/équipe.
+                        </p>
                     </div>
 
-                    <a href="devis.html" class="btn-cta"
-                        style="width: 100%; text-align: center; justify-content: center;">Demander un devis</a>
-                </div>
-            </div>
-
-            <!-- Rentabilité -->
-            <div class="row" style="margin-top: 4rem;">
-                <div class="col-12">
-                    <h3
-                        style="margin-bottom: 1.5rem; border-bottom: 2px solid var(--accent-color); display: inline-block;">
-                        Exemple de rentabilité</h3>
-                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
-                        <div class="feature-card">
-                            <h4>Pour 150 calendriers</h4>
-                            <p>Vente conseillée : 4€</p>
-                            <p>Coût achat : 150 x 1.49€ ≈ 223.5€</p>
-                            <p>Recette : 150 x 4€ = 600€</p>
-                            <h5 style="color: var(--success-color); margin-top: 1rem;">Bénéfice : 376,50€</h5>
-                        </div>
-                        <div class="feature-card">
-                            <h4>Pour 500 calendriers</h4>
-                            <p>Vente conseillée : 4€</p>
-                            <p>Coût achat : 500 x 1.15€ = 575€</p>
-                            <p>Recette : 500 x 4€ = 2000€</p>
-                            <h5 style="color: var(--success-color); margin-top: 1rem;">Bénéfice : 1425€</h5>
+                    <div class="sidebar-block">
+                        <h4>Meilleurs Ventes</h4>
+                        <div class="small-product-list">
+                            <div class="small-product-item">
+                                <a href="sousmainasso.html"><img src="images/association/117.jpg" alt="Sous Main"></a>
+                                <div style="display: flex; flex-direction: column;">
+                                    <a href="sousmainasso.html"
+                                        style="font-weight: 600; font-size: 0.95rem; margin-bottom: 0.25rem;">Sous Main
+                                        Asso</a>
+                                    <span style="font-size: 0.9rem; color: var(--primary-color);">Dès 0.30€</span>
+                                </div>
+                            </div>
+                            <div class="small-product-item">
+                                <a href="calendrier12pages.html"><img src="images/association/80.jpg"
+                                        alt="12 Pages"></a>
+                                <div style="display: flex; flex-direction: column;">
+                                    <a href="calendrier12pages.html"
+                                        style="font-weight: 600; font-size: 0.95rem; margin-bottom: 0.25rem;">12
+                                        Pages</a>
+                                    <span style="font-size: 0.9rem; color: var(--primary-color);">Dès 1.29€</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </aside>
             </div>
-
         </div>
     </section>
 

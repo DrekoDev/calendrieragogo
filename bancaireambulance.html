@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calendrier Bancaire Ambulancier - Calendrier à GoGo</title>
+    <title>Calendrier Ambulancier - Calendrier à GoGo</title>
     <meta name="description"
-        content="Calendriers bancaires souples pour ambulanciers. Un support publicitaire idéal pour votre activité.">
+        content="Calendrier bancaire souple spécialement conçu pour les ambulanciers. Un support publicitaire utile et durable.">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -23,127 +23,287 @@
                 <i class="fas fa-bars fa-lg"></i>
             </div>
             <nav class="nav-links">
-                <a href="index.html">Accueil</a>
-                <a href="sousmainasso.html">Association</a>
-                <a href="bancairesouple.html" class="active">Entreprise</a>
-                <a href="calendrier12pages.html">École</a>
+                <div class="nav-item">
+                    <a href="index.html" class="nav-link">Accueil</a>
+                </div>
+
+                <div class="nav-item">
+                    <a href="sousmainasso.html" class="nav-link">Association <i class="fas fa-chevron-down"
+                            style="font-size: 0.8em; margin-left: 5px;"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="sousmainasso.html" class="dropdown-item">Calendrier sous main</a>
+                        <a href="agendaasso.html" class="dropdown-item">Calendrier agenda</a>
+                        <a href="calendrierchevalet.html" class="dropdown-item">Nouveau : calendrier chevalet</a>
+                        <a href="calendrier12pages.html" class="dropdown-item">Calendrier 12 pages</a>
+                        <a href="agrafeasso.html" class="dropdown-item">Calendrier éphéméride agrafé</a>
+                        <a href="ephemerideimprime.html" class="dropdown-item">Calendrier éphéméride imprimé</a>
+                        <a href="prixminiasso.html" class="dropdown-item">Notre calendrier prix mini</a>
+                    </div>
+                </div>
+
+                <div class="nav-item">
+                    <a href="bancairesouple.html" class="nav-link active">Entreprise <i class="fas fa-chevron-down"
+                            style="font-size: 0.8em; margin-left: 5px;"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="bancairesouple.html" class="dropdown-item">Calendrier Bancaire souple</a>
+                        <a href="agrafeentreprise.html" class="dropdown-item">Calendrier bloc mensuel Agrafé</a>
+                        <a href="calendriersurmesure.html" class="dropdown-item">Calendrier sur mesure</a>
+                        <a href="sousmainfleuriste.html" class="dropdown-item">Spécial Fleuriste</a>
+                    </div>
+                </div>
+
+                <div class="nav-item">
+                    <a href="calendrier12pages.html" class="nav-link">École <i class="fas fa-chevron-down"
+                            style="font-size: 0.8em; margin-left: 5px;"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="sousmainecole.html" class="dropdown-item">Calendrier sous main</a>
+                        <a href="agrafeecole.html" class="dropdown-item">Calendrier éphéméride agrafé</a>
+                        <a href="imprimeecole.html" class="dropdown-item">Calendrier éphéméride imprimé</a>
+                    </div>
+                </div>
+
                 <a href="devis.html" class="btn-cta">Demander un Devis</a>
             </nav>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero" style="min-height: 400px; background-image: url('images/bannieresite.jpg');">
+    <section class="hero product-hero" style="background-image: url('images/bannieresite.jpg');">
         <div class="container hero-content">
             <h1>Calendrier Bancaire Ambulancier</h1>
             <p>Le support publicitaire idéal pour votre activité</p>
         </div>
     </section>
 
-    <!-- Product Detail Section -->
-    <section class="products">
-        <div class="container">
-            <div class="row" style="display: flex; flex-wrap: wrap; gap: 2rem;">
+    <!-- Main Content Grid -->
+    <section class="container" style="margin-bottom: 4rem;">
+        <div class="page-grid">
 
-                <!-- Product Images -->
-                <div class="col-image" style="flex: 1; min-width: 300px;">
-                    <div class="product-image" style="height: auto; margin-bottom: 20px;">
-                        <img src="images/entreprise/43big.jpg" alt="Calendrier Ambulancier"
-                            style="width: 100%; border-radius: var(--radius-md); box-shadow: var(--shadow-md);">
+            <!-- Left Column: Product Info -->
+            <div class="main-content">
+
+                <!-- Product Header (Images + Short Info) -->
+                <div class="product-main-flex" style="display: flex; flex-wrap: wrap; gap: 2rem; margin-bottom: 3rem;">
+                    <div class="col-image" style="flex: 1; min-width: 300px;">
+                        <div class="product-image" style="height: auto; margin-bottom: 20px;">
+                            <img src="images/entreprise/43big.jpg" alt="Calendrier Ambulancier"
+                                style="width: 100%; border-radius: var(--radius-md); box-shadow: var(--shadow-md);">
+                        </div>
+                    </div>
+
+                    <div class="col-info" style="flex: 1; min-width: 300px;">
+                        <h2 class="product-title" style="font-size: 2rem; margin-bottom: 1rem;">Calendrier Bancaire
+                            Souple Ambulancier</h2>
+                        <p class="reference"
+                            style="color: var(--text-light); margin-bottom: 0.5rem; font-style: italic;">Réf : C0060</p>
+                        <p class="product-price"
+                            style="font-size: 1.5rem; color: var(--primary-color); font-weight: bold; margin-bottom: 1.5rem;">
+                            À partir de 0,30€ HT</p>
+
+                        <div class="product-description" style="margin-bottom: 2rem; line-height: 1.8;">
+                            <p><strong>Format :</strong> 42cm x 30cm</p>
+                            <p><strong>Support :</strong> Cartonné souple 300g</p>
+                            <p><strong>Finition :</strong> Vernis acrylique brillant</p>
+                            <p><strong>Minimum de commande :</strong> 150 exemplaires</p>
+                            <p><strong>Délai :</strong> 8 à 10 jours après validation</p>
+                        </div>
+
+                        <a href="devis.html" class="btn-highlight">
+                            <span>Demander un devis</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
                     </div>
                 </div>
 
-                <!-- Product Info -->
-                <div class="col-info" style="flex: 1; min-width: 300px;">
-                    <h2 class="product-title" style="font-size: 2rem; margin-bottom: 1rem;">Calendrier Bancaire Souple
-                        Ambulancier</h2>
-                    <p class="product-reference" style="color: var(--text-light); margin-bottom: 1rem;">Réf : C0060</p>
-                    <p class="product-price"
-                        style="font-size: 1.5rem; color: var(--primary-color); font-weight: bold; margin-bottom: 1.5rem;">
-                        À partir de 0,30€ HT / unité</p>
-
-                    <div class="product-description" style="margin-bottom: 2rem; line-height: 1.8;">
-                        <p><strong><i class="fas fa-ruler-combined"></i> Dimensions :</strong> 42cm x 30cm</p>
-                        <p><strong><i class="fas fa-layer-group"></i> Support :</strong> Cartonné 300g (plus épais sur
-                            demande)</p>
-                        <p><strong><i class="fas fa-box"></i> Minimum de commande :</strong> 150 exemplaires</p>
-                        <p><strong><i class="fas fa-truck"></i> Livraison :</strong> 8 jours après validation</p>
-                        <p><strong><i class="fas fa-pen-fancy"></i> Personnalisation :</strong> Marquage inclus</p>
-                        <p><strong><i class="fas fa-info-circle"></i> Description :</strong> Calendrier 42cm x 30cm.
-                            Finition avec un vernis acrylique. D'autres dimensions sont possibles sur demande.</p>
+                <!-- Modern Tabs (Description / Info) -->
+                <div class="modern-tabs">
+                    <div class="tab-header">
+                        <button class="tab-btn active" onclick="openTab(event, 'description')">Description</button>
+                        <button class="tab-btn" onclick="openTab(event, 'info')">Informations complémentaires</button>
                     </div>
 
-                    <div
-                        style="background: #f8fafc; padding: 1.5rem; border-radius: var(--radius-md); border: 1px solid #e2e8f0; margin-bottom: 2rem;">
-                        <h3 style="margin-bottom: 1rem;">Tarifs Dégressifs (HT)</h3>
-                        <ul style="list-style: none; padding: 0;">
-                            <li style="margin-bottom: 0.5rem; display: flex; justify-content: space-between;"><span>150
-                                    à 299 ex.</span> <strong>0,95€ / unité</strong></li>
-                            <li style="margin-bottom: 0.5rem; display: flex; justify-content: space-between;"><span>300
-                                    à 499 ex.</span> <strong>0,90€ / unité</strong></li>
-                            <li style="margin-bottom: 0.5rem; display: flex; justify-content: space-between;"><span>500
-                                    à 799 ex.</span> <strong>0,75€ / unité</strong></li>
-                            <li style="margin-bottom: 0.5rem; display: flex; justify-content: space-between;"><span>800
-                                    à 999 ex.</span> <strong>0,65€ / unité</strong></li>
-                            <li style="margin-bottom: 0.5rem; display: flex; justify-content: space-between;"><span>1000
-                                    à 1999 ex.</span> <strong>0,49€ / unité</strong></li>
-                            <li style="margin-bottom: 0.5rem; display: flex; justify-content: space-between;"><span>2000
-                                    ex. et +</span> <strong>0,30€ / unité</strong></li>
-                        </ul>
-                        <p style="font-size: 0.9rem; color: var(--text-light); margin-top: 1rem;">* Frais de port en
-                            sus. Réalisation et maquette incluses.</p>
-                    </div>
+                    <div class="tab-body">
+                        <!-- Tab 1: Description -->
+                        <div id="description" class="tab-pane active">
+                            <ul class="feature-list">
+                                <li class="feature-item">
+                                    <div class="feature-icon"><i class="fas fa-ruler-combined"></i></div>
+                                    <div class="feature-text">
+                                        <strong>Format Standard</strong>
+                                        Dimension 42cm x 30cm (Autres dimensions possibles sur demande).
+                                    </div>
+                                </li>
+                                <li class="feature-item">
+                                    <div class="feature-icon"><i class="fas fa-layer-group"></i></div>
+                                    <div class="feature-text">
+                                        <strong>Support de Qualité</strong>
+                                        Cartonné souple 300g (Option plus épais disponible).
+                                    </div>
+                                </li>
+                                <li class="feature-item">
+                                    <div class="feature-icon"><i class="fas fa-magic"></i></div>
+                                    <div class="feature-text">
+                                        <strong>Finition Soignée</strong>
+                                        Vernis acrylique pour un aspect brillant et professionnel.
+                                    </div>
+                                </li>
+                                <li class="feature-item">
+                                    <div class="feature-icon"><i class="fas fa-pen-fancy"></i></div>
+                                    <div class="feature-text">
+                                        <strong>Personnalisation</strong>
+                                        Marquage publicitaire de votre ambulance inclus.
+                                    </div>
+                                </li>
+                                <li class="feature-item">
+                                    <div class="feature-icon"><i class="fas fa-box"></i></div>
+                                    <div class="feature-text">
+                                        <strong>Commande Minimum</strong>
+                                        Disponible à partir de 150 exemplaires.
+                                    </div>
+                                </li>
+                                <li class="feature-item">
+                                    <div class="feature-icon"><i class="fas fa-truck"></i></div>
+                                    <div class="feature-text">
+                                        <strong>Livraison Rapide</strong>
+                                        Expédition sous 8 jours après validation du bon à tirer.
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
 
-                    <a href="devis.html" class="btn-cta"
-                        style="width: 100%; text-align: center; justify-content: center;">Demander un devis</a>
+                        <!-- Tab 2: Info -->
+                        <div id="info" class="tab-pane">
+                            <h4 style="margin-bottom: 1rem; color: var(--secondary-color);">Studio de Création</h4>
+                            <ul style="list-style: none; padding: 0;">
+                                <li style="margin-bottom: 1rem; display: flex; align-items: flex-start; gap: 1rem;">
+                                    <i class="fas fa-envelope"
+                                        style="color: var(--primary-color); margin-top: 5px;"></i>
+                                    <div>
+                                        <strong>Envoi des éléments :</strong><br>
+                                        Transmettez votre logo et vos textes à <a href="mailto:calendrieragogo@sfr.fr"
+                                            style="color: var(--primary-color); font-weight: 600;">calendrieragogo@sfr.fr</a>
+                                    </div>
+                                </li>
+                                <li style="margin-bottom: 1rem; display: flex; align-items: flex-start; gap: 1rem;">
+                                    <i class="fas fa-paint-brush"
+                                        style="color: var(--primary-color); margin-top: 5px;"></i>
+                                    <div>
+                                        <strong>Maquette :</strong><br>
+                                        Nous réalisons gratuitement la maquette de votre personnalisation.
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
+
+                <!-- Related Products -->
+                <div class="related-products-section">
+                    <h3 class="section-title">Produits similaires pour entreprises</h3>
+                    <div class="product-grid" style="grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));">
+
+                        <div class="product-card">
+                            <a href="bancairesouple.html" class="product-card-link">
+                                <div class="product-image">
+                                    <img src="images/entreprise/44.jpg" alt="Bancaire Souple">
+                                </div>
+                                <div class="product-info">
+                                    <div class="product-category">Entreprise</div>
+                                    <h3 class="product-title" style="font-size: 1.1rem;">Bancaire Souple Standard</h3>
+                                    <div class="product-price">À partir de 0,30€</div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="product-card">
+                            <a href="bancairepharmacie.html" class="product-card-link">
+                                <div class="product-image">
+                                    <img src="images/entreprise/45.jpg" alt="Pharmacie">
+                                </div>
+                                <div class="product-info">
+                                    <div class="product-category">Entreprise</div>
+                                    <h3 class="product-title" style="font-size: 1.1rem;">Spécial Pharmacie</h3>
+                                    <div class="product-price">À partir de 0,30€</div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="product-card">
+                            <a href="agrafeentreprise.html" class="product-card-link">
+                                <div class="product-image">
+                                    <img src="images/entreprise/70.jpg" alt="Agrafé">
+                                </div>
+                                <div class="product-info">
+                                    <div class="product-category">Entreprise</div>
+                                    <h3 class="product-title" style="font-size: 1.1rem;">Bloc Mensuel Agrafé</h3>
+                                    <div class="product-price">À partir de 0,89€</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
-            <!-- Related Products -->
-            <div class="row" style="margin-top: 4rem;">
-                <div class="col-12">
-                    <h3
-                        style="margin-bottom: 2rem; border-bottom: 2px solid var(--primary-color); padding-bottom: 0.5rem; display: inline-block;">
-                        Vous aimerez aussi</h3>
-                    <div class="product-grid" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));">
+            <!-- Right Column: Sidebar -->
+            <aside class="sidebar">
+                <div class="sidebar-block">
+                    <h4>Tarifs Dégressifs (HT)</h4>
+                    <ul class="sidebar-list">
+                        <li>
+                            <span>150 à 299 ex.</span>
+                            <strong>0,99€</strong>
+                        </li>
+                        <li>
+                            <span>300 à 499 ex.</span>
+                            <strong>0.95€</strong>
+                        </li>
+                        <li>
+                            <span>500 à 799 ex.</span>
+                            <strong>0.80€</strong>
+                        </li>
+                        <li>
+                            <span>800 à 999 ex.</span>
+                            <strong>0.70€</strong>
+                        </li>
+                        <li>
+                            <span>1000 à 1999 ex.</span>
+                            <strong>0.49€</strong>
+                        </li>
+                        <li>
+                            <span>2000+ ex.</span>
+                            <strong>0,30€</strong>
+                        </li>
+                    </ul>
+                    <p style="font-size: 0.8rem; color: var(--text-light); margin-top: 1rem; line-height: 1.4;">
+                        * Tarifs HT. Frais de port en sus. Maquette offerte.
+                    </p>
+                </div>
 
-                        <div class="product-card">
-                            <div class="product-image">
-                                <img src="images/entreprise/40.jpg" alt="Calendrier Bancaire">
-                            </div>
-                            <div class="product-info">
-                                <h3>Bancaire Recto Verso</h3>
-                                <div class="price">À partir de 0,45€</div>
-                                <a href="bancaire.html" class="btn-product">Voir</a>
+                <div class="sidebar-block">
+                    <h4>Meilleures Ventes Entreprise</h4>
+                    <div class="small-product-list">
+                        <div class="small-product-item">
+                            <a href="bancairesouple.html"><img src="images/entreprise/44.jpg" alt="Bancaire"></a>
+                            <div style="display: flex; flex-direction: column;">
+                                <a href="bancairesouple.html"
+                                    style="font-weight: 600; font-size: 0.95rem; margin-bottom: 0.25rem;">Bancaire
+                                    Souple</a>
+                                <span style="font-size: 0.9rem; color: var(--primary-color);">Dès 0.30€</span>
                             </div>
                         </div>
-
-                        <div class="product-card">
-                            <div class="product-image">
-                                <img src="images/entreprise/70.jpg" alt="Calendrier Agrafé">
-                            </div>
-                            <div class="product-info">
-                                <h3>Bloc Mensuel Agrafé</h3>
-                                <div class="price">À partir de 0,89€</div>
-                                <a href="agrafeentreprise.html" class="btn-product">Voir</a>
+                        <div class="small-product-item">
+                            <a href="agrafeentreprise.html"><img src="images/entreprise/70.jpg" alt="Agraphe"></a>
+                            <div style="display: flex; flex-direction: column;">
+                                <a href="agrafeentreprise.html"
+                                    style="font-weight: 600; font-size: 0.95rem; margin-bottom: 0.25rem;">Bloc
+                                    Agrafé</a>
+                                <span style="font-size: 0.9rem; color: var(--primary-color);">Dès 0.89€</span>
                             </div>
                         </div>
-
-                        <div class="product-card">
-                            <div class="product-image">
-                                <img src="images/entreprise/60.jpg" alt="Sur Mesure">
-                            </div>
-                            <div class="product-info">
-                                <h3>Calendrier Sur Mesure</h3>
-                                <div class="price">À l'unité</div>
-                                <a href="calendriersurmesure.html" class="btn-product">Voir</a>
-                            </div>
-                        </div>
-
                     </div>
                 </div>
-            </div>
-
+            </aside>
         </div>
     </section>
 
@@ -186,6 +346,11 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <script>
+        function changeImage(src) {
+            document.querySelector('.product-image img').src = src;
+        }
+    </script>
 </body>
 
 </html>

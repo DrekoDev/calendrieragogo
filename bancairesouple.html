@@ -23,17 +23,52 @@
                 <i class="fas fa-bars fa-lg"></i>
             </div>
             <nav class="nav-links">
-                <a href="index.html">Accueil</a>
-                <a href="sousmainasso.html">Association</a>
-                <a href="bancairesouple.html" class="active">Entreprise</a>
-                <a href="calendrier12pages.html">École</a>
+                <div class="nav-item">
+                    <a href="index.html" class="nav-link">Accueil</a>
+                </div>
+
+                <div class="nav-item">
+                    <a href="sousmainasso.html" class="nav-link">Association <i class="fas fa-chevron-down"
+                            style="font-size: 0.8em; margin-left: 5px;"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="sousmainasso.html" class="dropdown-item">Calendrier sous main</a>
+                        <a href="agendaasso.html" class="dropdown-item">Calendrier agenda</a>
+                        <a href="calendrierchevalet.html" class="dropdown-item">Nouveau : calendrier chevalet</a>
+                        <a href="calendrier12pages.html" class="dropdown-item">Calendrier 12 pages</a>
+                        <a href="agrafeasso.html" class="dropdown-item">Calendrier éphéméride agrafé</a>
+                        <a href="ephemerideimprime.html" class="dropdown-item">Calendrier éphéméride imprimé</a>
+                        <a href="prixminiasso.html" class="dropdown-item">Notre calendrier prix mini</a>
+                    </div>
+                </div>
+
+                <div class="nav-item">
+                    <a href="bancairesouple.html" class="nav-link active">Entreprise <i class="fas fa-chevron-down"
+                            style="font-size: 0.8em; margin-left: 5px;"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="bancairesouple.html" class="dropdown-item">Calendrier Bancaire souple</a>
+                        <a href="agrafeentreprise.html" class="dropdown-item">Calendrier bloc mensuel Agrafé</a>
+                        <a href="calendriersurmesure.html" class="dropdown-item">Calendrier sur mesure</a>
+                        <a href="sousmainfleuriste.html" class="dropdown-item">Spécial Fleuriste</a>
+                    </div>
+                </div>
+
+                <div class="nav-item">
+                    <a href="calendrier12pages.html" class="nav-link">École <i class="fas fa-chevron-down"
+                            style="font-size: 0.8em; margin-left: 5px;"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="sousmainecole.html" class="dropdown-item">Calendrier sous main</a>
+                        <a href="agrafeecole.html" class="dropdown-item">Calendrier éphéméride agrafé</a>
+                        <a href="imprimeecole.html" class="dropdown-item">Calendrier éphéméride imprimé</a>
+                    </div>
+                </div>
+
                 <a href="devis.html" class="btn-cta">Demander un Devis</a>
             </nav>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero" style="min-height: 400px; background-image: url('images/carousel/Bandeau4.jpg');">
+    <section class="hero product-hero" style="background-image: url('images/carousel/Bandeau4.jpg');">
         <div class="container hero-content">
             <h1>Calendriers Bancaires Souples</h1>
             <p>Un outil indispensable pour être présent toute l'année chez vos clients</p>
@@ -51,8 +86,8 @@
             <div class="product-grid">
 
                 <!-- Fleuriste -->
-                <a href="sousmainfleuriste.html" class="product-card-link">
-                    <div class="product-card">
+                <div class="product-card">
+                    <a href="sousmainfleuriste.html" class="product-card-link">
                         <div class="product-image">
                             <img src="images/entreprise/52.jpg" alt="Calendrier Fleuriste">
                         </div>
@@ -61,12 +96,12 @@
                             <h3 class="product-title">Pour Fleuristes</h3>
                             <p class="product-price">À partir de 0,30€ HT</p>
                         </div>
-                    </div>
-                </a>
+                    </a>
+                </div>
 
                 <!-- Ambulancier -->
-                <a href="bancaireambulance.html" class="product-card-link">
-                    <div class="product-card">
+                <div class="product-card">
+                    <a href="bancaireambulance.html" class="product-card-link">
                         <div class="product-image">
                             <img src="images/entreprise/43.jpg" alt="Calendrier Ambulancier">
                         </div>
@@ -75,12 +110,12 @@
                             <h3 class="product-title">Pour Ambulanciers</h3>
                             <p class="product-price">À partir de 0,30€ HT</p>
                         </div>
-                    </div>
-                </a>
+                    </a>
+                </div>
 
                 <!-- Pharmacie -->
-                <a href="bancairepharmacie.html" class="product-card-link">
-                    <div class="product-card">
+                <div class="product-card">
+                    <a href="bancairepharmacie.html" class="product-card-link">
                         <div class="product-image">
                             <img src="images/entreprise/81.jpg" alt="Calendrier Pharmacie">
                         </div>
@@ -89,12 +124,12 @@
                             <h3 class="product-title">Pour Pharmaciens</h3>
                             <p class="product-price">À partir de 0,30€ HT</p>
                         </div>
-                    </div>
-                </a>
+                    </a>
+                </div>
 
                 <!-- Toutes Professions -->
-                <a href="bancairedivers.html" class="product-card-link">
-                    <div class="product-card">
+                <div class="product-card">
+                    <a href="bancairedivers.html" class="product-card-link">
                         <div class="product-image">
                             <img src="images/entreprise/44.jpg" alt="Calendrier Entreprise">
                         </div>
@@ -103,8 +138,8 @@
                             <h3 class="product-title">Toutes Professions</h3>
                             <p class="product-price">À partir de 0,30€ HT</p>
                         </div>
-                    </div>
-                </a>
+                    </a>
+                </div>
 
             </div>
 
@@ -114,8 +149,8 @@
 
             <div class="product-grid">
                 <!-- Recto Verso -->
-                <a href="bancaire.html" class="product-card-link">
-                    <div class="product-card">
+                <div class="product-card">
+                    <a href="bancaire.html" class="product-card-link">
                         <div class="product-image">
                             <img src="images/entreprise/40.jpg" alt="Calendrier Recto Verso">
                         </div>
@@ -124,8 +159,8 @@
                             <h3 class="product-title">Bancaire Recto-Verso</h3>
                             <p class="product-price">À partir de 0,45€ HT</p>
                         </div>
-                    </div>
-                </a>
+                    </a>
+                </div>
             </div>
 
         </div>
